@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
   const [messages, setMessages] = useState([]);
-  const jwtToken = 'Sec-WebSocket-Protocol'; 
+  const jwtToken = 'jwt_token'; 
 
   useEffect(() => {
     const ws = new WebSocket("wss://jgedemomaster.oceanlab.in", jwtToken);
